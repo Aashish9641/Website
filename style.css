@@ -4,10 +4,6 @@
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 /* navbar */
 .navbar {
   display: flex;
@@ -130,7 +126,7 @@ html {
   margin-bottom: 20px;
 }
 
-/* profilio sextion */
+/* profilio section */
 #profilio {
   display: flex;
   flex-direction: column;
@@ -138,6 +134,7 @@ html {
   color: white;
   align-items: center;
   padding: 20px;
+  background-image: url('3.jpg');
 }
 
 .gallery {
@@ -147,11 +144,6 @@ html {
   box-sizing: border-box;
 }
 
-.gallery img {
-  width: 360px;
-  height: 234px;
-  margin: 10px;
-}
 
 /* contact section */
 #Contact {
