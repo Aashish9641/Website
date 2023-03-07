@@ -5,6 +5,13 @@
 }
 
 /* navbar */
+@media (max-width: 950px) {
+  .navbar{
+    color: powderblue;
+
+
+  }
+}
 .navbar {
   display: flex;
   justify-content: center;
@@ -126,15 +133,14 @@
   margin-bottom: 20px;
 }
 
-/* profilio section */
-#profilio {
+/* Portfolio section */
+#Portfolio {
   display: flex;
   flex-direction: column;
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
   align-items: center;
   padding: 20px;
-  background-image: url('3.jpg');
 }
 
 .gallery {
@@ -192,3 +198,5 @@
   cursor: pointer;
   box-shadow: 0 0 10px white;
 }
+
+/* Work Experiece */
