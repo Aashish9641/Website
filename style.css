@@ -5,13 +5,7 @@
 }
 
 /* navbar */
-@media (max-width: 950px) {
-  .navbar{
-    color: powderblue;
 
-
-  }
-}
 .navbar {
   display: flex;
   justify-content: center;
@@ -199,4 +193,75 @@
   box-shadow: 0 0 10px white;
 }
 
+/* media Query start */
+@media all and (max-width: 900px) {
+  #intro {
+    color: red;
+    background-image: url(images/100.jpg)
+  }
+
+  #intro h2 {
+    color: blue;
+  }
+
+  #Contact {
+    color: red;
+    background-image: url(images/nature.jpg);
+  }
+
+  .navbar {
+    color: aqua;
+    background-color: green;
+
+  }
+
+  .headings {
+    color: aqua;
+    text-shadow: 2cm;
+  }
+
+  #home {
+    background-image: url(images/babu.jpg);
+
+  }
+
+  .btn {
+    color: blue;
+  }
+
+  .navbar ul li a {
+    color: orangered;
+  }
+
+}
+
+
 /* Work Experiece */
+#report h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+#report {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 10px;
+}
+#Work-experience {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 20px;
+  margin-bottom: 50px;
+  background-color: powderblue;
+}
+
+#img {
+  display: flex;
+}
+
+#img img {
+  width: 575px;
+  height: 400px;
+}
