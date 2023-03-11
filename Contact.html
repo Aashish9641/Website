@@ -7,11 +7,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 
 <body>
+    <!--Navagation bar start-->
     <nav class="navbar">
-        <!--Navagation bar start-->
+        <div class="icons">
+            <h2 class="logo">AaSHisH</h2>
+        </div>
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="Portfolio.html">Portfolio</a></li>
@@ -19,6 +23,10 @@
             <li><a href="Work-experience.html">Work-experience</a></li>
             <li><a href="Site-report.html">Site-report</a></li>
         </ul>
+        <div class="search">
+            <input class="srch" type="search" name="" placeholder="Type to text">
+            <a href="#"> <button class="Btn">Search</button></a>
+        </div>
     </nav>
     <!--Contact information start-->
     <section id="Contact">
@@ -28,10 +36,33 @@
             <input type="email" name="email" class="input" placeholder="Enter your Email">
             <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Enter your Message"></textarea>
             <input type="submit" value="SEND" id="send">
-
-
         </from>
+        <div class="wrapper">
+            <div class="icon facebook">
+                <div class="tooltip">Facbook</div>
+                <span><i class="fab fa-facebook"></i></span>
+            </div>
+            <div class="icon twitter">
+                <div class="tooltip">Twitter</div>
+                <span><i class="fab fa-twitter"></i></span>
+            </div>
+            <div class="icon instagram">
+                <div class="tooltip">Instagram</div>
+                <span><i class="fab fa-instagram"></i></span>
+            </div>
+            <div class="icon whatsapp">
+                <div class="tooltip">Whatsapp</div>
+                <span><i class="fab fa-whatsapp"></i></span>
+            </div>
+            <div class="icon github">
+                <div class="tooltip">Github</div>
+                <span><i class="fab fa-github"></i></span>
+            </div>
+        </div>
+
     </section>
+
+
 </body>
 
 </html>
