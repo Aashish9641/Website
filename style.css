@@ -16,6 +16,20 @@
   font-size: 16px;
 }
 
+.checkbtn {
+  font-size: 31px;
+  color: white;
+  float: left;
+  line-height: 70px;
+  margin-right: 35px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
 .icons {
   float: left;
   width: 200px;
@@ -24,7 +38,7 @@
 }
 
 .logo {
-  color: blue;
+  color: aqua;
   font-size: 35px;
   padding-left: 0px;
   float: left;
@@ -35,7 +49,9 @@
   display: flex;
   list-style: none;
   margin: 20px 0px;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
 }
 
 .navbar ul li {
@@ -47,11 +63,16 @@
 }
 
 .navbar ul li a {
-  padding: 8px 25px;
+  padding: 8px 15px;
   text-decoration: none;
   color: white;
   transition: all .5s ease;
   font-weight: bold;
+}
+
+.navbar ul li a {
+  display: block;
+  padding: 10px;
 }
 
 .navbar ul li a:hover {
@@ -113,6 +134,7 @@
 }
 
 
+
 /* Home Section */
 #home {
   display: flex;
@@ -148,7 +170,7 @@
 
 .headings {
   font-size: 3rem;
-  font-family: ;
+  font-family: 'roberto', sans-serif;
   text-align: center;
   margin: 40px 0px;
 }
@@ -175,10 +197,9 @@
 #Portfolio {
   display: flex;
   flex-direction: column;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.9);
   color: white;
   align-items: center;
-  padding: 20px;
 }
 
 .gallery {
@@ -188,6 +209,10 @@
   box-sizing: border-box;
 }
 
+.gallery img {
+  margin: 15px;
+}
+
 /* About section */
 #about {
   display: flex;
@@ -195,6 +220,9 @@
   box-sizing: border-box;
   padding: 20px;
   margin-bottom: 50px;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+
 }
 
 #pic {
@@ -271,6 +299,11 @@
   box-shadow: 0 0 10px #fff;
 }
 
+.col-1 {
+  display: flex;
+  align-items: center;
+}
+
 .wrapper {
   display: inline-flex;
 }
@@ -303,6 +336,7 @@
   line-height: 60px;
 }
 
+
 .wrapper .icon .tooltip {
   position: absolute;
   top: -50px;
@@ -326,7 +360,7 @@
 
 }
 
-wrapper .icon .tooltip:before {
+.wrapper .icon .tooltip:before {
   position: absolute;
   content: "";
   height: 15px;
@@ -374,8 +408,9 @@ wrapper .icon .tooltip:before {
 }
 
 
+
 /* media Query start */
-@media all and (max-width: 900px) {
+@media all and (max-width: 500px) {
   #intro {
     color: red;
     background-image: url(images/100.jpg)
@@ -392,13 +427,22 @@ wrapper .icon .tooltip:before {
 
   .navbar {
     color: aqua;
-    background-color: green;
-
+    background-color: gray;
+    position: relative;
+    flex-direction: column;
+    padding: 0 0px;
+    text-align: justify;
   }
+
 
   .headings {
     color: aqua;
     text-shadow: 2cm;
+    margin-top: 200px;
+  }
+
+  .search {
+    display: none;
   }
 
   #home {
@@ -411,10 +455,43 @@ wrapper .icon .tooltip:before {
   }
 
   .navbar ul li a {
-    color: orangered;
+    color: yellow;
   }
 
+  .logo {
+    text-align: center;
+    color: #e1306c;
+  }
+
+
+  #about {
+    background-color: #e1306c;
+  }
+
+  .navbar {
+    height: auto;
+
+  }
+
+  .navbar ul {
+    display: contents;
+  }
+
+  .screen {
+    color: #e1306c;
+
+  }
+
+  #Site-report {
+    color: azure;
+    background-color: rebeccapurple;
+    background-image: url('images/11.jpg');
+  }
 }
+
+
+
+
 
 
 /* Work Experiece */
@@ -464,4 +541,32 @@ wrapper .icon .tooltip:before {
   width: 575px;
   height: 400px;
   margin: 24px;
+}
+
+/* Site-report */
+#Site-report {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 28px;
+  margin-bottom: 50px;
+  background-color: aqua;
+}
+
+.gpt {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  box-sizing: border-box;
+}
+
+.gpt img {
+  margin: 15px;
+}
+
+.screen {
+  font-size: 3rem;
+  font-family: 'roberto', sans-serif;
+  text-align: center;
+  margin: 40px 0px;
 }
