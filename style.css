@@ -16,20 +16,6 @@
   font-size: 16px;
 }
 
-.checkbtn {
-  font-size: 31px;
-  color: white;
-  float: left;
-  line-height: 70px;
-  margin-right: 35px;
-  cursor: pointer;
-  display: none;
-}
-
-#check {
-  display: none;
-}
-
 .icons {
   float: left;
   width: 200px;
@@ -43,6 +29,24 @@
   padding-left: 0px;
   float: left;
   padding-top: 10px;
+}
+
+.logo span {
+  color: red;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger span {
+  display: block;
+  width: 30px;
+  height: 4px;
+  margin-bottom: 5px;
+  background-color: #333;
+
 }
 
 .navbar ul {
@@ -134,7 +138,6 @@
 }
 
 
-
 /* Home Section */
 #home {
   display: flex;
@@ -192,7 +195,6 @@
   font-weight: bold;
 }
 
-
 /* Portfolio section */
 #Portfolio {
   display: flex;
@@ -246,8 +248,6 @@
   margin-bottom: 20px;
 }
 
-
-
 /* contact section */
 #Contact {
   display: flex;
@@ -299,118 +299,9 @@
   box-shadow: 0 0 10px #fff;
 }
 
-.col-1 {
-  display: flex;
-  align-items: center;
-}
-
-.wrapper {
-  display: inline-flex;
-}
-
-.wrapper .icon {
-  margin: 0 25px;
-  cursor: pointer;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  position: relative;
-  z-index: 2;
-}
-
-.wrapper .icon span {
-  height: 60px;
-  width: 60px;
-  display: block;
-  background: gray;
-  text-align: center;
-  border-radius: 50%;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-  position: relative;
-  z-index: 2;
-}
-
-.wrapper .icon span i {
-  font-size: 25px;
-  line-height: 60px;
-}
-
-
-.wrapper .icon .tooltip {
-  position: absolute;
-  top: -50px;
-  background: #fff;
-  padding: 10px 20px;
-  font-size: 20px;
-  border-radius: 25px;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-  opacity: 0;
-  pointer-events: none;
-  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-
-}
-
-.wrapper .icon:hover .tooltip {
-  top: -70;
-  opacity: 1;
-  pointer-events: auto;
-  color: #fff;
-
-
-}
-
-.wrapper .icon .tooltip:before {
-  position: absolute;
-  content: "";
-  height: 15px;
-  width: 15px;
-  background: #fff;
-  bottom: -8px;
-  left: 50%;
-  transform: translateX(-50%) rotate(45deg);
-}
-
-.wrapper .icon:hover span,
-.wrapper .icon:hover .tooltip {
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.4);
-
-}
-
-.wrapper .facebook:hover span,
-.wrapper .facebook:hover .tooltip,
-.wrapper .facebook:hover .tooltip:before {
-  background: #385999;
-}
-
-.wrapper .twitter:hover span,
-.wrapper .twitter:hover:hover .tooltip,
-.wrapper .twitter:hover .tooltip:before {
-  background: #46c1f6;
-}
-
-.wrapper .instagram:hover span,
-.wrapper .instagram:hover .tooltip,
-.wrapper .instagram:hover .tooltip:before {
-  background: #e1306c;
-}
-
-.wrapper .whatsapp:hover span,
-.wrapper .whatsapp:hover .tooltip,
-.wrapper .whatsapp:hover .tooltip:before {
-  background: greenyellow;
-}
-
-.wrapper .github:hover span,
-.wrapper .github:hover .tooltip,
-.wrapper .github:hover .tooltip:before {
-  background: #333;
-}
-
-
 
 /* media Query start */
-@media all and (max-width: 500px) {
+@media all and (max-width: 767px) {
   #intro {
     color: red;
     background-image: url(images/100.jpg)
@@ -418,6 +309,13 @@
 
   #intro h2 {
     color: blue;
+  }
+
+  .hamburger {
+    display: block;
+    position: fixed;
+    top: 20px;
+    right: 20px;
   }
 
   #Contact {
@@ -433,7 +331,6 @@
     padding: 0 0px;
     text-align: justify;
   }
-
 
   .headings {
     color: aqua;
@@ -461,8 +358,8 @@
   .logo {
     text-align: center;
     color: #e1306c;
+    margin-right: 20px;
   }
-
 
   #about {
     background-color: #e1306c;
@@ -489,10 +386,11 @@
   }
 }
 
-
-
-
-
+@media (min-width: 768px) {
+  .hambrger {
+    display: none;
+  }
+}
 
 /* Work Experiece */
 #report h3 {
@@ -550,7 +448,8 @@
   box-sizing: border-box;
   padding: 28px;
   margin-bottom: 50px;
-  background-color: aqua;
+  background-color: black;
+  color: white;
 }
 
 .gpt {
